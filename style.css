@@ -14,12 +14,20 @@ header {
   width: 100%;
   padding: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
 
 #canvas-container {
+  position: relative;
   margin-top: 10px;
   background: #fff;
   border: 2px solid #444;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
