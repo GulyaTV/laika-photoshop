@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Laika Photoshop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🖌️ Laika Photoshop</h1>
+    <input type="file" id="fileInput" accept="image/*">
+    <button onclick="exportImage()">Экспорт PNG</button>
+  </header>
+
+  <div id="canvas-container">
+    <canvas id="editorCanvas" width="800" height="600"></canvas>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
