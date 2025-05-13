@@ -9,13 +9,23 @@
   <header>
     <h1>🖌️ Laika Photoshop</h1>
     <input type="file" id="fileInput" accept="image/*">
+    <button onclick="addLayer()">+ Слой</button>
+    <button onclick="undo()">Undo</button>
+    <button onclick="redo()">Redo</button>
+    <select id="filterSelect">
+      <option value="">Фильтр</option>
+      <option value="brightness(1.2)">Ярче</option>
+      <option value="blur(3px)">Размытие</option>
+      <option value="contrast(1.5)">Контраст</option>
+    </select>
     <button onclick="exportImage()">Экспорт PNG</button>
   </header>
 
-  <div id="canvas-container">
-    <canvas id="editorCanvas" width="800" height="600"></canvas>
-  </div>
+  <div id="canvas-container"></div>
 
+  <script src="history.js"></script>
+  <script src="filters.js"></script>
+  <script src="brush.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
